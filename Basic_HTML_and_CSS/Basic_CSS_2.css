@@ -5,4 +5,11 @@ p {
     font-weight:bold;
     font-style:italic;
     text-align:left;
+p {
+    text-shadow:2px 2px royalblue;
+    color:midnightblue;
+    background:mediumturquoise;
+    font-weight:bold;
+    font-style:italic;
+    text-align:left;
 }
