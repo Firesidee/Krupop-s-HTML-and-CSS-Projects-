@@ -1,0 +1,89 @@
+body {
+    background-color:blanchedalmond;
+}
+h1 {
+    color:darkmagenta;
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rebeccapurple;
+
+}
+.container {
+    width: 450px;
+    height: 450px;
+    background-color:slategray;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+/*---------------------------------
+    Selects all available squares
+---------------------------------*/
+.container .squares:nth-child(-n+4) {
+    background-image: url("../Images/Icons/Smiley_Face_1.png");
+    color:seashell;
+    float:left;
+    width: 100px;
+    height:100px;
+    margin:5px;
+    border: 1px solid black;
+    border-radius:25%;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+/*-------------------------------------------
+    Selects all available squares paragraphs
+--------------------------------------------*/
+.squares:nth-child(-n+4) p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5cm;
+    font-weight:900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px white;
+}
+.squares:nth-child(1) {
+    background-color: royalblue;
+}
+.squares:nth-child(2) {
+    background-color: saddlebrown;
+}
+.squares:nth-child(3) {
+    background-color: teal;
+}
+.squares:nth-child(4) {
+    background-color: tomato;
+}
+/*---------------------------------------
+    Hover, Translate, Transform Effects
+---------------------------------------*/
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../Images/Icons/Smiley_Face_2.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2)
+}
+.squares:nth-child(1):hover {
+    background-color:rgb(117, 149, 243);
+}
+.squares:nth-child(2):hover {
+    background-color: rgb(161, 105, 65);
+}
+.squares:nth-child(3):hover {
+    background-color:turquoise;
+}
+.squares:nth-child(4):hover {
+    background-color:rgb(230, 143, 128);
+}
+/*--------------------
+    Animation Effect
+--------------------*/
+@keyframes race {
+0%, 100% {
+    transform: translateY(0px);
+    background-image: url("../Images/Icons/Smiley_Face_2.png");
+}
+50% {
+    transform: translateY(330px);
+    }
+}
