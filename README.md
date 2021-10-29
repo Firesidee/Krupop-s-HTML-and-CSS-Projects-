@@ -1,4 +1,3 @@
 # Krupop-s-HTML-and-CSS-Projects-
-Krupop the Barbarian is back, and she's figured out how to create a repository for The Tech Academy
+Hello!  This respository contains the overview of the projects I have created using HTML and CSS.
 
-This is the repository for any CSS/HTML projects/assignments having to do with Tech Academy
